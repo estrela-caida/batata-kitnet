@@ -126,3 +126,173 @@ footer {
   text-align: center;
   padding: 20px;
 }
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.menu-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+.menu-icon .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+.search-container {
+    display: flex;
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.search-input {
+    border: none;
+    padding: 8px 15px;
+    flex-grow: 1;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.search-button {
+    background-color: #eee;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button svg {
+    fill: #555;
+}
+
+.main-content {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.story-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.story-card {
+    display: flex;
+    flex-direction: column; /* Stacks elements on small screens */
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .story-card {
+        flex-direction: row; /* Arranges elements side-by-side on larger screens */
+    }
+}
+
+.story-image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 100px); /* Fixed height for simplicity */
+    gap: 5px;
+    flex-shrink: 0; /* Prevents shrinking on larger screens */
+    width: 210px; /* (100px*2) + 5px + 5px = 210px */
+}
+
+.image-placeholder {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: #888;
+    cursor: pointer;
+}
+
+.plus-icon {
+    font-weight: bold;
+    font-size: 3em;
+    color: #5cb85c; /* A green color for the plus */
+}
+
+.story-details {
+    flex-grow: 1;
+}
+
+.story-title-placeholder {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+.story-text-placeholder {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.story-category-placeholder {
+    font-style: italic;
+    color: #777;
+    font-size: 0.9em;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
